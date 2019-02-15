@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections;
 
 namespace Euler
 {
@@ -36,6 +37,23 @@ namespace Euler
             prime[1] = false;
             return prime;
 
+        }
+         
+        public ArrayList getDividers(long n) {
+
+            ArrayList dividers = new ArrayList();
+
+            long tmp = n;
+            for (int i = 1; i < tmp; i++) {
+                if (n % i == 0) {
+                    dividers.Add((Int64)i);
+                    dividers.Add((Int64)(n / i));
+                    tmp = n / i;
+                }
+            }
+
+
+            return dividers;
         }
     }
 }
