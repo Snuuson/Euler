@@ -35,20 +35,22 @@ namespace Euler
                 for (int j = 0; j <= 12; j++) {
                     tmp *= IA[i + j];
                 }
-                Console.WriteLine(tmp);
+               
                 if (tmp > maxValue) {
                     maxValue = tmp;
                     startingPos = i;
                 }
             }
+            Console.WriteLine("---Problem 8---");
             Console.WriteLine("Maximum Value: " + maxValue);
             Console.WriteLine("Starting Index: " + startingPos);
             Console.Write("Numbers: ");
+            
             for (int j = 0; j <= 12; j++)
             {
                 Console.Write(IA[startingPos + j]);
             }
-            
+            Console.WriteLine("");
             return 0;
         }
     }

@@ -11,8 +11,11 @@ namespace Euler
         static void Main(string[] args)
         {
             Problem8 p8 = new Problem8();
+            Problem9 p9 = new Problem9();
 
             p8.P();
+            p9.P();
+            Console.WriteLine("-End-");
             Console.ReadKey();
         }
     }
