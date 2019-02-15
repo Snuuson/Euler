@@ -16,6 +16,7 @@ namespace Euler
             Problem10 p10 = new Problem10();
             Problem11 p11 = new Problem11();
             Problem12 p12 = new Problem12();
+            Problem13 p13 = new Problem13();
             Util u = new Util();
 
             Console.WriteLine("-Util-");
@@ -36,6 +37,7 @@ namespace Euler
             p10.P();
             p11.P();
             p12.P();
+            p13.P();
             Console.WriteLine("-End-");
             Console.ReadKey();
         }
