@@ -9,6 +9,7 @@ namespace Euler
     class Problem9
     {
         public void P() {
+            Console.WriteLine("---Problem 9---");
             int a = 0;
             int b = 1;
             int c = 2;
@@ -23,7 +24,7 @@ namespace Euler
                     {
                         if (((a + b + c) == 1000)) {
                             if (((a * a) + (b * b) == (c * c))) {
-                                Console.WriteLine("---Problem 9---");
+                                
                                 Console.WriteLine("a: " + a + ", b: " + b + ", c: " + c);
                                 Console.WriteLine("Product = " + (a*b*c));
                                 found = true;

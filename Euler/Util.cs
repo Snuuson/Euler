@@ -8,7 +8,7 @@ namespace Euler
 {
     class Util
     {
-        public static void SieveOfEratosthenes(int n)
+        public bool[] SieveOfEratosthenes(int n)
         {
 
             // Create a boolean array "prime[0..n]" and initialize 
@@ -32,12 +32,9 @@ namespace Euler
                 }
             }
 
-            // Print all prime numbers 
-            for (int i = 2; i <= n; i++)
-            {
-                if (prime[i] == true)
-                    Console.Write(i + " ");
-            }
+            prime[0] =  false;
+            prime[1] = false;
+            return prime;
 
         }
     }
